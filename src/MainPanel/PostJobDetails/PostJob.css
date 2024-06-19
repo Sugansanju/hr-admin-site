@@ -1,0 +1,77 @@
+.post-text{
+    font-size:20px;
+    font-weight: 700;
+}
+
+.view-all{
+    color:#2474c5;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+/* SearchInput.css */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 400px; /* Adjust the width as needed */
+    gap: 10px; /* Optional: adds space between input and button */
+  }
+  
+  .input-wrapper {
+    position: relative;
+    flex-grow: 1; /* Allow the input to take up remaining space */
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 10px 10px 10px; /* Adjust padding to make space for the icon */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-input::placeholder {
+    color: #ccc; /* Change this to your desired placeholder color */
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    color: #888;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  .icon-clr{
+    color:#2474c5;
+  }
+
+  .nav-tab-cls{
+    border-bottom: 2px solid black;
+
+  }
+  .n-item{
+    padding: 10px 10px 0px 10px ;
+    /* width0%; */
+    text-align: center;
+  }
+/* Override default nav link color */
+.nav-link {
+  color: #333; /* Custom text color */
+}
+

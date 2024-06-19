@@ -1,0 +1,16 @@
+.nav-item{
+    padding:20px;
+}
+
+.nav-item a {
+    color: black; /* Default color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-link:hover {
+    color: darkgray; /* Color on hover */
+  }
+  
+  .nav-link-active {
+    color: red; /* Color when active */
+  }
