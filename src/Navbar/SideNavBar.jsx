@@ -17,37 +17,38 @@ import { ThemeContext } from '../Context/ThemeContext';
 function SideNavBar() {
     const {theme}=useContext(ThemeContext);
     const styl=`${theme} col-md-12 d-none d-md-block bg-body-white sidebar shadow border-end border-top border-bottom border-light-subtle`;
-    const styl1="bg-white col-md-12 d-none d-md-block bg-body-white sidebar shadow border-end border-top border-bottom border-light-subtle";  return (
+    const styl1="bg-white col-md-12 d-none d-md-block bg-body-white sidebar shadow border-end border-top border-bottom border-light-subtle"; 
+     return (
     <>
-       <Nav className={`${theme=='light'? styl1 : styl} `}
-       style={{ width: '60px',borderTopRightRadius:'25px',paddingTop:'20px',}}
-  >
-    <div className="sidebar-sticky"></div>
-    <Nav.Item>
-      <NavLink ><Image src={home} width={20} /></NavLink>
-    </Nav.Item>
-    <Nav.Item>
-      <NavLink  ><Image src={icon1} width={20}/></NavLink>
-    </Nav.Item>
-    <Nav.Item>
-      <NavLink ><Image src={icon2} width={20}/> </NavLink>
-    </Nav.Item>
-    <Nav.Item>
-      <NavLink ><Image src={icon3} width={20}/> </NavLink>
-    </Nav.Item>
-    <Nav.Item>
-      <NavLink ><Image src={icon4} width={20}/> </NavLink>
-    </Nav.Item>
-    <Nav.Item>
-      <NavLink ><Image src={icon5} width={20}/> </NavLink>
-    </Nav.Item>
-    <Nav.Item>
-      <NavLink ><Image src={icon6} width={20}/> </NavLink>
-    </Nav.Item>
-    <Nav.Item>
-      <NavLink ><Image src={icon7}  width={20}/> </NavLink>
-    </Nav.Item>
+      <div className="nav-container">
+      <Nav className={`${theme === 'light' ? styl1 : styl}`} style={{ width: '60px', borderTopRightRadius: '25px', paddingTop: '20px', height: '100%' }}>
+         <div className="sidebar-sticky"></div>
+        <Nav.Item>
+          <NavLink ><Image src={home} width={20} /></NavLink>
+        </Nav.Item>
+        <Nav.Item>
+          <NavLink  ><Image src={icon1} width={20}/></NavLink>
+        </Nav.Item>
+        <Nav.Item>
+          <NavLink ><Image src={icon2} width={20}/> </NavLink>
+        </Nav.Item>
+        <Nav.Item>
+          <NavLink ><Image src={icon3} width={20}/> </NavLink>
+        </Nav.Item>
+        <Nav.Item>
+          <NavLink ><Image src={icon4} width={20}/> </NavLink>
+        </Nav.Item>
+        <Nav.Item>
+          <NavLink ><Image src={icon5} width={20}/> </NavLink>
+        </Nav.Item>
+        <Nav.Item>
+          <NavLink ><Image src={icon6} width={20}/> </NavLink>
+        </Nav.Item>
+        <Nav.Item>
+          <NavLink ><Image src={icon7}  width={20}/> </NavLink>
+        </Nav.Item>
   </Nav>
+  </div>
     </>
   )
 }
